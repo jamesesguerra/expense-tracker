@@ -1,4 +1,5 @@
-export default (state, action) => {
+
+const appReducer = function(state, action) {
     switch(action.type) {
         case 'DELETE_TRANSACTION':
             return {
@@ -13,4 +14,6 @@ export default (state, action) => {
         default:
             return state;
     }
-}
+} 
+
+export default appReducer;
